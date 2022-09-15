@@ -1,0 +1,63 @@
+.myHeader {
+  border: 5px outset black;
+  background-color: Gainsboro;
+  text-align: center;
+}
+@media (min-width: 769px){
+  .myHeader {
+    border: 5px outset blue;
+    background-image: linear-gradient(180deg, midnightblue, orange, red);
+    text-align: center;
+  }
+}
+
+
+body,h1,h2, p {
+  font-family: opendyslexic;
+}
+
+.skillTable>table, th, td{
+  border: 1px solid black;
+  border-collapse: separate;
+
+}
+.skillTable>table th{
+  background-color: Gainsboro;
+}
+
+/* font stuff not important */
+@font-face {
+  font-family: 'opendyslexic';
+  src: url('C:/Users/theal/webprojecttest/Fonts/OpenDyslexic-Regular.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'opendyslexic';
+  src: url('C:/Users/theal/webprojecttest/Fonts/OpenDyslexic-Italic.otf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'opendyslexic';
+  src: url('C:/Users/theal/webprojecttest/Fonts/OpenDyslexic-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'opendyslexic';
+  src: url('C:/Users/theal/webprojecttest/Fonts/OpenDyslexic-BoldItalic.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+* {
+  font-size:15px;
+  line-height:200%;
+  color: #191A42;
+  font-family:opendyslexic !important;
+}
