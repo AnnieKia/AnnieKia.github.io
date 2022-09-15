@@ -19,13 +19,13 @@ li.navBar {
   float: left;
   background-color: #fffef0;
   width: 25%;
-  color:white;
+
   text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
 }
 
 li.navBar a.navBar {
   display: block;
-  color: white;
+
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -35,17 +35,34 @@ a:hover.navBar {
   background-color: #4C463D;
 }
 
-.navBar{
-  width: 100%;
 
-}
-
-@media only screen and (max-width: 767px){
+@media (max-width: 786px){
   .navBar{
-  width: 91.5vw;
+  width: auto;
+  margin: 0;
+  overflow: hidden;
+  float: none;
+  padding: 0;
   display: block;
   text-align: center;
+  background-color: Gainsboro;
   }
+  li.navBar{
+    float: none;
+    width: auto;
+  }
+  li.navBar a.navBar{
+    width:auto;
+  }
+
+  .myHeader{
+    border: black;
+    background-color: Gainsboro;
+  }
+  *{
+    color: black;
+  }
+
 }
 
 
@@ -62,6 +79,8 @@ padding: 4em;
 box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
 background-color: #fffef0;
 }
+
+
 }
 
 h1 {
@@ -107,13 +126,10 @@ h1 {
   font-style: italic;
 }
 
-* {
-  font-family: opendyslexic;
-  color: #38499B !important;
-}
+
 * {
   font-size:15px;
   line-height:200%;
-  color: #191A42;
+      color: #191A42;
   font-family:opendyslexic !important;
 }
