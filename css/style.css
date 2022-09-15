@@ -1,20 +1,73 @@
+
+
 .myHeader {
-  border: 5px outset black;
-  background-color: Gainsboro;
+  border: 5px outset BlanchedAlmond;
+  background-color: #fffef0;
   text-align: center;
+
 }
-@media (min-width: 769px){
-  .myHeader {
-    border: 5px outset blue;
-    background-image: linear-gradient(180deg, midnightblue, orange, red);
-    text-align: center;
+ul.navBar{
+  list-style-type: none;
+  margin: 0 auto;
+  width: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: BlanchedAlmond;
+}
+
+li.navBar {
+  float: left;
+  background-color: #fffef0;
+  width: 25%;
+  color:white;
+  text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+li.navBar a.navBar {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover.navBar {
+  background-color: #4C463D;
+}
+
+.navBar{
+  width: 100%;
+
+}
+
+@media only screen and (max-width: 767px){
+  .navBar{
+  width: 91.5vw;
+  display: block;
+  text-align: center;
   }
 }
 
 
-body,h1,h2, p {
-  font-family: opendyslexic;
+
+@media (min-width: 786px){
+body {
+position: absolute;
+width: 75%;
+min-height: calc((1vw + 1vh) * 75);
+/* center page */
+top: 0%; left: 50%; transform: translate(-50%, 0);
+margin: 2em 0;
+padding: 4em;
+box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+background-color: #fffef0;
 }
+}
+
+h1 {
+  font-size: 30
+}
+
 
 .skillTable>table, th, td{
   border: 1px solid black;
@@ -28,33 +81,36 @@ body,h1,h2, p {
 /* font stuff not important */
 @font-face {
   font-family: 'opendyslexic';
-  src: url('C:/Users/theal/webprojecttest/Fonts/OpenDyslexic-Regular.otf');
+  src: url('../Fonts/OpenDyslexic-Regular.otf');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'opendyslexic';
-  src: url('C:/Users/theal/webprojecttest/Fonts/OpenDyslexic-Italic.otf');
+  src: url('../Fonts/OpenDyslexic-Italic.otf');
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'opendyslexic';
-  src: url('C:/Users/theal/webprojecttest/Fonts/OpenDyslexic-Bold.otf');
+  src: url('../Fonts/OpenDyslexic-Bold.otf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'opendyslexic';
-  src: url('C:/Users/theal/webprojecttest/Fonts/OpenDyslexic-BoldItalic.otf');
+  src: url('../Fonts/OpenDyslexic-BoldItalic.otf');
   font-weight: bold;
   font-style: italic;
 }
 
-
+* {
+  font-family: opendyslexic;
+  color: #38499B !important;
+}
 * {
   font-size:15px;
   line-height:200%;
